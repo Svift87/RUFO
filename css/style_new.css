@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/фон.png);
+  background-image: url(../img/background.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,16 +166,16 @@ body {
   width: 80%;
 }
 .header__fence::after {
-  background-image: url(../img/иконка\ 1.png);
+  background-image: url(../img/icon1.png);
 }
 .header__roof::after {
-  background-image: url(../img/иконка\ 2.png);
+  background-image: url(../img/icon2.png);
 }
 .header__gutter::after {
-  background-image: url(../img/иконка\ 3.png);
+  background-image: url(../img/icon3.png);
 }
 .header__material::after {
-  background-image: url(../img/иконка\ 4.png);
+  background-image: url(../img/icon4.png);
 }
 .header__basket {
   font-size: 0;
@@ -421,7 +421,7 @@ body {
   content: '';
   position: absolute;
   left: 0;
-  background-image: url(../img/кавычки.png);
+  background-image: url(../img/quotes.png);
   width: 76px;
   height: 50px;
   background-size: contain;
@@ -475,7 +475,7 @@ body {
   fill: #53AE44;
 }
 .articles {
-  background-image: url(../img/фон3.png);
+  background-image: url(../img/background3.png);
   background-size: cover;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -573,7 +573,7 @@ body {
 .objects {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url(../img/фон2.png);
+  background-image: url(../img/background2.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
