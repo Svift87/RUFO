@@ -1406,8 +1406,11 @@ body {
   background-repeat: no-repeat;
 }
 .footer__top {
-  margin-top: 10px;
+  background-color: #000;
   margin-bottom: 10px;
+}
+.footer__top-container {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
