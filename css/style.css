@@ -1675,7 +1675,7 @@ select.select-beauty {
   margin-bottom: 10px;
   position: relative;
   font-size: 12px;
-  color: #7e7e7e;
+  color: #fff;
 }
 .bread__el:after {
   content: '-';
@@ -2707,6 +2707,7 @@ select.select-beauty {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 30px;
+  padding-top: 30px;
 }
 @media only screen and (max-width: 740px) {
   .unit-el {

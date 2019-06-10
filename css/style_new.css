@@ -649,3 +649,106 @@ body {
 .bacground__white {
   background-color: #fff;
 }
+.catalog__header {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.catalog__grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.catalog__el {
+  display: flex;
+  align-items: center;
+  border: 4px solid #fff;
+  cursor: pointer;
+}
+.catalog__name {
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 0;
+}
+.catalog__el--ruffalz,
+.catalog__el--accessories,
+.catalog__el--warming,
+.catalog__el--metal-tile,
+.catalog__el--drainpipes,
+.catalog__el--roofing {
+  grid-column-start: span 2;
+  grid-row-start: span 1;
+  position: relative;
+}
+.catalog__el--ruffalz img,
+.catalog__el--accessories img,
+.catalog__el--warming img,
+.catalog__el--metal-tile img,
+.catalog__el--drainpipes img,
+.catalog__el--roofing img {
+  width: 185px;
+  height: 100%;
+  margin-right: 20px;
+}
+.catalog__el--ruffalz::after,
+.catalog__el--accessories::after,
+.catalog__el--warming::after,
+.catalog__el--metal-tile::after,
+.catalog__el--drainpipes::after,
+.catalog__el--roofing::after {
+  content: '';
+  width: 185px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.catalog__el--ruffalz:hover:after,
+.catalog__el--accessories:hover:after,
+.catalog__el--warming:hover:after,
+.catalog__el--metal-tile:hover:after,
+.catalog__el--drainpipes:hover:after,
+.catalog__el--roofing:hover:after {
+  background-color: rgba(0, 0, 0, 0);
+}
+.catalog__el--stairs,
+.catalog__el--flexible,
+.catalog__el--order,
+.catalog__el--facade,
+.catalog__el--attic {
+  grid-row-start: span 2;
+  grid-column-start: span 1;
+  flex-direction: column;
+  align-items: baseline;
+  position: relative;
+}
+.catalog__el--stairs img,
+.catalog__el--flexible img,
+.catalog__el--order img,
+.catalog__el--facade img,
+.catalog__el--attic img {
+  min-width: 100%;
+  height: 260px;
+}
+.catalog__el--stairs::after,
+.catalog__el--flexible::after,
+.catalog__el--order::after,
+.catalog__el--facade::after,
+.catalog__el--attic::after {
+  content: '';
+  min-width: 100%;
+  height: 260px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.catalog__el--stairs:hover:after,
+.catalog__el--flexible:hover:after,
+.catalog__el--order:hover:after,
+.catalog__el--facade:hover:after,
+.catalog__el--attic:hover:after {
+  background-color: rgba(0, 0, 0, 0);
+}

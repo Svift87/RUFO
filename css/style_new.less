@@ -692,3 +692,81 @@ body {
 .bacground__white {
     background-color: #fff;
 }
+
+.catalog__header {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.catalog__grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.catalog__el {
+    display: flex;
+    align-items: center;
+    border: 4px solid #fff;
+    cursor: pointer;
+}
+
+.catalog__name {
+    font-size: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0;
+}
+.catalog__el--ruffalz,
+.catalog__el--accessories,
+.catalog__el--warming,
+.catalog__el--metal-tile,
+.catalog__el--drainpipes,
+.catalog__el--roofing {
+    grid-column-start: span 2;
+    grid-row-start: span 1;
+    position: relative;  
+    img {
+        width: 185px;
+        height: 100%;
+        margin-right: 20px;      
+    }
+    &::after {
+        content: '';
+        width: 185px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &:hover:after {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+.catalog__el--stairs,
+.catalog__el--flexible,
+.catalog__el--order,
+.catalog__el--facade,
+.catalog__el--attic {
+    grid-row-start: span 2;
+    grid-column-start: span 1;
+    flex-direction: column;
+    align-items: baseline;
+    position: relative;  
+    img {
+        min-width: 100%;
+        height: 260px;
+    }
+    &::after {
+        content: '';
+        min-width: 100%;
+        height: 260px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &:hover:after {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
