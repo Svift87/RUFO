@@ -31,10 +31,9 @@ gulp.task('images', function(){
 
 gulp.task('scripts', function () {
     return gulp.src([
-        'src/js/combined.js',
         'src/js/script.js'
     ])
-    .pipe(concat('script.all.js'))
+    .pipe(concat('scripts.js'))
     .pipe(gulp.dest('src/js'))
     .pipe(browserSync.reload({stream: true}))
 });
@@ -59,7 +58,7 @@ gulp.task('del', function() {
     del(['dist']);
 })
 
-gulp.task('build', ['del', 'scripts', 'less', 'images'], function () {
+gulp.task('build', ['del', 'less', 'images'], function () {
     return gulp.src([
         'src/**/*.html',
         'src/**/*.all.js',
