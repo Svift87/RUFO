@@ -311,6 +311,7 @@ $(document).ready(function () {
 	// toggle filter === end
 
 	slider ('.reviews__slider', '.reviews__prev', '.reviews__next');
+	slider ('.product_examples__slider_container', '.product_examples__prev', '.product_examples__next');
     
     function slider (a, b, c) {
         
@@ -364,4 +365,30 @@ $(document).ready(function () {
 	}
 
 	hiddenText ()
+
+	
+	 // Примеры объекта
+
+	function workExamples (a, b) {
+        let workexamplesBigImage = document.querySelectorAll(a),
+            workexamplesSmallImage = document.querySelectorAll(b),
+            shadowBlock = document.querySelectorAll('.shadow__block');
+        if (workexamplesBigImage != undefined) {            
+            for (let i = 0; workexamplesSmallImage.length > i; i++) {
+                for (let a = 0; workexamplesBigImage.length > a; a++) {
+                    workexamplesBigImage[a].src = workexamplesSmallImage[0].src;
+                    shadowBlock[0].style.display = 'none';
+                    
+                    workexamplesSmallImage[i].addEventListener('click', function(){
+                        for (let c = 0; shadowBlock.length > c; c++) {
+                            shadowBlock[c].style.display = 'block';
+                        }
+                        workexamplesBigImage[a].src = workexamplesSmallImage[i].src;
+                        shadowBlock[i].style.display = 'none';
+                    }) 
+                }                  
+            }
+        }        
+	}
+	workExamples ('.product_examples__big_image', '.workexamples__small_image');
 });
