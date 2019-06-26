@@ -5291,6 +5291,19 @@ body {
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.11);
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contacts__form-header {
   position: absolute;
@@ -5515,4 +5528,194 @@ body {
 }
 .workexamples__small_container:hover .shadow__block {
   display: none !important;
+}
+.reviews__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.reviews-card {
+  padding-bottom: 10px;
+}
+.reviews-card__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  width: 48%;
+  border: 4px solid #000;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.reviews-card__name {
+  font-size: 30px;
+  padding-left: 90px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+.reviews-card__name span {
+  color: #868686;
+  font-size: 14px;
+  font-weight: 300;
+}
+.reviews-card__name::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  background-image: url(../img/quotes.png);
+  width: 76px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.reviews-card__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 80px;
+}
+.contacts__input {
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 40px;
+  background-color: inherit;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.item__get {
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+}
+.contacts__label {
+  margin-left: 5%;
+  font-weight: bold;
+}
+.contacts__maps iframe {
+  width: 100%;
+  height: 400px;
+}
+.contacts__maps {
+  margin-bottom: 80px;
+}
+.news__header {
+  color: #fff;
+}
+.news__card {
+  border: 4px solid #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.news__left {
+  width: 20%;
+}
+.news__left .news__img {
+  width: 100%;
+}
+.news__right {
+  width: 78%;
+  color: #fff;
+}
+.news__right p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.news__data {
+  font-size: 16px;
+}
+.news__header-card {
+  font-size: 25px;
+  font-weight: bold;
+}
+.news__text {
+  font-size: 20px;
+}
+.news .pagination__el {
+  color: #fff;
+}
+.img_float_right {
+  float: right;
+}
+.img_float_left {
+  float: left;
+}
+.new__text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.new {
+  margin-bottom: 40px;
+}
+.new p {
+  font-size: 20px;
+}
+.new a {
+  font-size: 20px;
+}
+.new h2 {
+  font-size: 28px;
+}
+.new h1 {
+  font-size: 35px;
+}
+.new li {
+  list-style: none;
+  position: relative;
+  font-size: 20px;
+}
+.new li::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #53ae44;
+  position: absolute;
+  left: -35px;
+  top: 4px;
+  border-radius: 10px;
 }
