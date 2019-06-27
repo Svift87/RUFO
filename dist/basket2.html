@@ -304,62 +304,97 @@
         <div class="main-cont">
             <div class="bread">
                 <a class="bread__el" href="#">Главная</a>
-                <a class="bread__el" href="#">Каталог</a>
+                <a class="bread__el" href="#">Корзина покупок</a>
             </div>
         </div>
-        <div class="bacground__white">
+        <div class="bacground__grey">
             <div class="main-cont">
-                <div class="question">
-                    <div class="question__top">
-                        <h2 class="question__header">
-                            Вопрос-ответ
-                        </h2>
-                        <button class="item__get question__btn">
-                            Задать вопрос
-                        </button>
+                <div class="basket">
+                    <div class="basket__top">
+                        <h3 class="basket__header basket__header--active">
+                            1. Ваша корзина
+                        </h3>
+                        <h3 class="basket__header">
+                            2. Оформление
+                        </h3>
+                        <h3 class="basket__header">
+                            3. Номер заказа
+                        </h3>
                     </div>
-                    <div class="question__main">
-                        <div class="question__container">
-                            <div class="question__question">
-                                Какие бывают цвета профнастила?
+                    <div class="registration">
+                        <div class="registration__left">
+                            <div class="registration__user bacground__white">
+                                <h3 class="registration__user--header">
+                                    Информация о покупателе
+                                </h3>
+                                <div class="registration__label-block">
+                                    <label for="registrationPhone">Ф.И.О.<span>*</span></label>
+                                    <input type="text" class="registration__user--input" placeholder="Фамилия Имя Отчество">
+                                </div>                                
+                                <div class="registration__user--input-block">
+                                    <div class="registration__label-block">
+                                        <label for="registrationPhone">Телефон<span>*</span></label>    
+                                        <input id="registrationPhone" type="text" class="registration__user--input" placeholder="+7 (___)-___-__-__">
+                                    </div>
+                                    <div class="registration__label-block">
+                                        <label for="registrationMail">Email</label>    
+                                        <input id="registrationMail" type="text" class="registration__user--input" placeholder="Example@mail.ru">
+                                    </div>                                    
+                                </div>
+                                <div class="registration__label-block">
+                                    <label for="registrationComent">Коментарий к заказу</label>
+                                    <input id="registrationComent" type="text" class="registration__user--input" placeholder="Ваше сообщение">
+                                </div>
                             </div>
-                            <div class="question__answer">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eveniet ad sint nulla, id deleniti accusantium molestiae voluptatum quasi saepe aspernatur a tenetur debitis ducimus beatae iure provident quae ipsa.
-                                Similique, ipsam nulla libero possimus officia distinctio esse fugiat iure eos culpa vero odio necessitatibus sed quae doloribus dignissimos mollitia voluptatibus unde pariatur, reiciendis non tempora praesentium aliquam quo. Id.
-                                Molestias laborum ducimus repudiandae voluptatem blanditiis similique nobis sit quibusdam eos accusamus tenetur porro praesentium unde hic, molestiae accusantium eligendi quisquam asperiores eum suscipit ratione! Possimus quam sapiente error nihil.
+                            <div class="registration__services">
+                                <h3 class="registration__services--header">
+                                    Услуги
+                                </h3>
+                                <div class="goods-type__el">
+                                    <select class="select-beauty" style="display: none;">
+                                        <option>Доставка</option>
+                                        <option>Пластик</option>
+                                        <option>Дерево</option>
+                                    </select>
+                                </div>
+                                <input type="text" class="registration__services--input" placeholder="Стоимость от 1000 до 2500 рублей">
+                                <button class="btn registration__services--btn">
+                                    Добавить к заказу
+                                </button>
+                            </div>
+                            <div class="basket__bottom">
+                                <p class="total__total--text">
+                                    Итого: 
+                                    <span class="basket__total--value">
+                                        1200
+                                    </span>
+                                    &#8381;
+                                </p>
+                                <button class="btn basket__btn--order">
+                                    Оформить заказ
+                                </button>
+                                <a href="#" class="btn basket__btn--back">
+                                    Назад в каталог
+                                </a>
+                            </div>
+                            <div class="basket__information-order">
+                                <a href="#" class="basket__print-order">Распечатать заказ</a>
+                                <a href="#" class="basket__email-order">Отправить заказ pdf файлом на почту</a>
                             </div>
                         </div>
-                        <div class="question__container">
-                            <div class="question__question">
-                                Какие бывают цвета профнастила?
-                            </div>
-                            <div class="question__answer">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eveniet ad sint nulla, id deleniti accusantium molestiae voluptatum quasi saepe aspernatur a tenetur debitis ducimus beatae iure provident quae ipsa.
-                                Similique, ipsam nulla libero possimus officia distinctio esse fugiat iure eos culpa vero odio necessitatibus sed quae doloribus dignissimos mollitia voluptatibus unde pariatur, reiciendis non tempora praesentium aliquam quo. Id.
-                                Molestias laborum ducimus repudiandae voluptatem blanditiis similique nobis sit quibusdam eos accusamus tenetur porro praesentium unde hic, molestiae accusantium eligendi quisquam asperiores eum suscipit ratione! Possimus quam sapiente error nihil.
-                            </div>
-                        </div>
-                        <div class="question__container">
-                            <div class="question__question">
-                                Какие бывают цвета профнастила?
-                            </div>
-                            <div class="question__answer">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eveniet ad sint nulla, id deleniti accusantium molestiae voluptatum quasi saepe aspernatur a tenetur debitis ducimus beatae iure provident quae ipsa.
-                                Similique, ipsam nulla libero possimus officia distinctio esse fugiat iure eos culpa vero odio necessitatibus sed quae doloribus dignissimos mollitia voluptatibus unde pariatur, reiciendis non tempora praesentium aliquam quo. Id.
-                                Molestias laborum ducimus repudiandae voluptatem blanditiis similique nobis sit quibusdam eos accusamus tenetur porro praesentium unde hic, molestiae accusantium eligendi quisquam asperiores eum suscipit ratione! Possimus quam sapiente error nihil.
-                            </div>
-                        </div>
-                        <div class="question__container">
-                            <div class="question__question">
-                                Какие бывают цвета профнастила?
-                            </div>
-                            <div class="question__answer">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eveniet ad sint nulla, id deleniti accusantium molestiae voluptatum quasi saepe aspernatur a tenetur debitis ducimus beatae iure provident quae ipsa.
-                                Similique, ipsam nulla libero possimus officia distinctio esse fugiat iure eos culpa vero odio necessitatibus sed quae doloribus dignissimos mollitia voluptatibus unde pariatur, reiciendis non tempora praesentium aliquam quo. Id.
-                                Molestias laborum ducimus repudiandae voluptatem blanditiis similique nobis sit quibusdam eos accusamus tenetur porro praesentium unde hic, molestiae accusantium eligendi quisquam asperiores eum suscipit ratione! Possimus quam sapiente error nihil.
+                        <div class="registration__right">
+                            <div class="registration__order bacground__white">
+                                <div class="registration__block registration__block--top">
+                                    <p class="registration__th">Ваш заказ</p>
+                                    <p class="registration__th">(<span class="registration__th--quantity">2</span> товара)</p>
+                                </div>
+                                <div class="registration__block">
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>

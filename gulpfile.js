@@ -67,7 +67,7 @@ gulp.task('build', ['del', 'less', 'images'], function () {
         'src/**/*.woff2',
         'src/**/*.ttf',
         'src/**/*.eot',
-        'src/js/*.js'
+        'src/**/*.js'
     ])
     .pipe(gulp.dest('dist'))
 });
