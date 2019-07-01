@@ -304,115 +304,114 @@
         <div class="main-cont">
             <div class="bread">
                 <a class="bread__el" href="#">Главная</a>
-                <a class="bread__el" href="#">Корзина покупок</a>
+                <a class="bread__el" href="#">Сравнение</a>
             </div>
         </div>
-        <div class="bacground__grey">
+        <div class="bacground__white">
             <div class="main-cont">
-                <div class="basket">
-                    <div class="basket__top">
-                        <h3 class="basket__header">
-                            1. Ваша корзина
+                <div class="comparison">
+                    <h2 class="ojb-el__header">
+                        Сравнение
+                    </h2>    
+                    <div class="comparison__block">
+                        <h3 class="comparison__subheader">
+                            Металлочерепица, стекловата
                         </h3>
-                        <h3 class="basket__header basket__header--active">
-                            2. Оформление
-                        </h3>
-                        <h3 class="basket__header">
-                            3. Номер заказа
-                        </h3>
+                        <a href="#" class="comparison__back">
+                            Назад
+                        </a>
                     </div>
-                    <div class="registration">
-                        <div class="registration__left">
-                            <div class="registration__container registration__user bacground__white">
-                                <h3 class="registration__user--header">
-                                    Информация о покупателе
-                                </h3>
-                                <div class="registration__label-block">
-                                    <label for="registrationPhone">Ф.И.О.<span>*</span></label>
-                                    <input type="text" class="registration__user--input" placeholder="Фамилия Имя Отчество">
-                                </div>                                
-                                <div class="registration__user--input-block">
-                                    <div class="registration__label-block">
-                                        <label for="registrationPhone">Телефон<span>*</span></label>    
-                                        <input id="registrationPhone" type="text" class="registration__user--input" placeholder="+7 (___)-___-__-__">
-                                    </div>
-                                    <div class="registration__label-block">
-                                        <label for="registrationMail">Email</label>    
-                                        <input id="registrationMail" type="text" class="registration__user--input" placeholder="Example@mail.ru">
-                                    </div>                                    
-                                </div>
-                                <div class="registration__label-block">
-                                    <label for="registrationComent">Коментарий к заказу</label>
-                                    <input id="registrationComent" type="text" class="registration__user--input" placeholder="Ваше сообщение">
-                                </div>
-                                <p class="registration__user--info">
-                                    Поля отмеченные<span>*</span>,  обязательны к заполнению
-                                </p>
-                            </div>
-                            <div class="registration__container registration__services bacground__white">
-                                <h3 class="registration__user--header">
-                                    Услуги
-                                </h3>
-                                <div class="registration__services--input-block">
-                                    <div class="goods-type__el">
-                                        <select class="select-beauty" style="display: none;">
-                                            <option>Доставка</option>
-                                            <option>Пластик</option>
-                                            <option>Дерево</option>
-                                        </select>
-                                    </div>
-                                    <input type="text" class="registration__services--input" placeholder="Стоимость от 1000 до 2500 рублей">
-                                    <button class="btn registration__services--btn">
-                                        Добавить к заказу
-                                    </button>
-                                </div>                                
-                            </div>
-                            <div class="basket__bottom">
-                                <p class="total__total--text">
-                                    Итого: 
-                                    <span class="basket__total--value">
-                                        1200
-                                    </span>
-                                    &#8381;
-                                </p>
-                                <button class="btn basket__btn--order">
-                                    Оформить заказ
-                                </button>
-                                <a href="#" class="btn basket__btn--back">
-                                    Назад в каталог
-                                </a>
-                            </div>
-                            <div class="basket__information-order">
-                                <a href="#" class="basket__print-order">Распечатать заказ</a>
-                                <a href="#" class="basket__email-order">Отправить заказ pdf файлом на почту</a>
-                            </div>
+                    <div class="comparison__info">
+                        <div class="comparison__param">
+                            <div class="comparison__param--list"></div>
+                            <div class="comparison__param--list">Параметр</div>
+                            <div class="comparison__param--list">Параметр</div>
+                            <div class="comparison__param--list">Параметр</div>
+                            <div class="comparison__param--list">Параметр</div>
+                            <div class="comparison__param--list"></div>
+                            <div class="comparison__param--list"></div>
                         </div>
-                        <div class="registration__right">
-                            <div class="registration__container registration__order bacground__white">
-                                <div class="registration__block registration__block--top">
-                                    <p class="registration__th">Ваш заказ</p>
-                                    <p class="registration__th">(<span class="registration__th--quantity">2</span> товара)</p>
+                        <div class="comparison__objs--scroll">
+                            <div class="comparison__objs">
+                                <div class="comparison__objs--item">
+                                    <div class="comparison__objs--list">
+                                        <img src="img/comparison3.png" alt="">
+                                    </div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--price">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--del">Удалить</div>
+                                    <div class="comparison__objs--list comparison__objs--list--btn">
+                                        <button class="comparison__objs--btn">
+                                            Заказать
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="registration__block registration__block--price">
-                                    <p class="registration__tr">1. Металлоцерепица Uno Grand Line</p>
-                                    <p class="registration__tr registration__tr--price">640 &#8381;</p>
+                                <div class="comparison__objs--item">
+                                    <div class="comparison__objs--list">
+                                        <img src="img/comparison3.png" alt="">
+                                    </div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--price">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--del">Удалить</div>
+                                    <div class="comparison__objs--list comparison__objs--list--btn">
+                                        <button class="comparison__objs--btn">
+                                            Заказать
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="registration__block registration__block--price">
-                                    <p class="registration__tr">2. Металлоцерепица Uno Grand Line</p>
-                                    <p class="registration__tr registration__tr--price">640 &#8381;</p>
+                                <div class="comparison__objs--item">
+                                    <div class="comparison__objs--list">
+                                        <img src="img/comparison3.png" alt="">
+                                    </div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--price">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--del">Удалить</div>
+                                    <div class="comparison__objs--list comparison__objs--list--btn">
+                                        <button class="comparison__objs--btn">
+                                            Заказать
+                                        </button>
+                                    </div>
                                 </div>
-                                <p class="total__total--text">
-                                    Итого: 
-                                    <span class="basket__total--value">
-                                        1200
-                                    </span>
-                                    &#8381;
-                                </p>
-                                <a class="registration__order--link" href="#">Редактировать заказ</a>
+                                <div class="comparison__objs--item">
+                                    <div class="comparison__objs--list">
+                                        <img src="img/comparison3.png" alt="">
+                                    </div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--price">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--del">Удалить</div>
+                                    <div class="comparison__objs--list comparison__objs--list--btn">
+                                        <button class="comparison__objs--btn">
+                                            Заказать
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="comparison__objs--item">
+                                    <div class="comparison__objs--list">
+                                        <img src="img/comparison3.png" alt="">
+                                    </div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--price">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list">Имя параметра</div>
+                                    <div class="comparison__objs--list comparison__objs--list--del">Удалить</div>
+                                    <div class="comparison__objs--list comparison__objs--list--btn">
+                                        <button class="comparison__objs--btn">
+                                            Заказать
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
